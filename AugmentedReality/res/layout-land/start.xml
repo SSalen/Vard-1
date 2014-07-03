@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="25dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:src="@drawable/vard_large"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/bEnterCam"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/mybutton"
+            android:text="Camera Application"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:layout_weight="0.2"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/bUserGuide"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/mybutton"
+            android:text="User Guide"
+            android:textSize="18dp"
+            android:layout_gravity="right" 
+            android:layout_weight="0.2"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
