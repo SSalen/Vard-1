@@ -10,12 +10,18 @@
         android:title="Help"
         android:id="@+id/help" />
     
+    <item
+        android:title="Alarms"
+        android:id="@+id/alarms" />
+    
     <item 
         android:title="Display settings"
         android:id="@+id/dispsetting"  />
 
         
-
+	<item
+	    android:title="Set Transparency"
+	    android:id="@+id/transparent" />
 
     <item 
         android:title="Return"

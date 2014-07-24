@@ -1,10 +1,16 @@
 package com.ex.augmentedreality;
 
 
+import java.io.File;
+
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -22,7 +28,6 @@ public class Start extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.start);
 		initialize();
-		
 		bStartCamera.setOnClickListener(this);
 		bUserGuide.setOnClickListener(this);
 	}
@@ -50,13 +55,38 @@ public class Start extends Activity implements OnClickListener {
 			}
 			break; 
 		case R.id.bUserGuide:
-			Intent guideIntent = new Intent(Start.this , UserGuide.class);
-			startActivity(guideIntent);
+				/*	----------------------------------------------------------
+			 	Intent guideIntent = new Intent(Start.this , UserGuide.class);
+				startActivity(guideIntent); 
+				
+				UserGuide.class not necessary: 	
+				----------------------------------------------------------- */
 			
+			File ugfile = new File(Environment.getExternalStorageDirectory(),
+					"UserGuide.docx");
+
+			try {
+				if (ugfile.exists()) {
+					Uri path = Uri.fromFile(ugfile);
+					Intent fileIntent = new Intent(Intent.ACTION_VIEW);
+					fileIntent
+							.setDataAndType(path,
+									"application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+					fileIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+					startActivity(fileIntent);
+				} else {
+					Toast.makeText(Start.this, "File NotFound",
+							Toast.LENGTH_SHORT).show();
+				}
+			} catch (ActivityNotFoundException e) {
+				Toast.makeText(Start.this, "No Viewer Application Found",
+						Toast.LENGTH_SHORT).show();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			
 			break;
 		}
-		
 	}
 
 
@@ -65,6 +95,8 @@ public class Start extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		super.onCreateOptionsMenu(menu);
 		MenuInflater popUp = getMenuInflater();
+	//	menu.add(1,1,Menu.FIRST,"").setIcon(R.drawable.ebutton);
+		
 		popUp.inflate(R.menu.options_menu, menu);
 		return true;
 	}
@@ -75,6 +107,7 @@ public class Start extends Activity implements OnClickListener {
 		switch(item.getItemId()){
 			case R.id.exit:
 			finish();
+			
 			
 			break;
 		}

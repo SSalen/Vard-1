@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName "Private area, please log in"
+
+AuthUserFile "C:\Users\joar.molvar@vard.com\Documents\password_file.txt"
+AuthGroupFile /dev/null
+
+
+
+require valid-user

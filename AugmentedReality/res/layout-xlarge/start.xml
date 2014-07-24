@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    android:padding="50dp" >
+    android:padding="50dp"
+    tools:context=".Vibrator" >
 
     <ImageView
         android:id="@+id/imageView1"
@@ -17,7 +19,7 @@
         android:layout_width="fill_parent"
         android:layout_height="55dp"
         android:layout_marginTop="60dp"
-        android:background="@drawable/mybutton"
+        android:background="@drawable/testbutton"
         android:text="Camera Application"
         android:textSize="24dp" />
 
@@ -26,7 +28,7 @@
         android:layout_width="fill_parent"
         android:layout_height="55dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/mybutton"
+        android:background="@drawable/testbutton"
         android:text="User Guide"
         android:textSize="24dp" />
 

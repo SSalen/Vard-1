@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    android:padding="50dp" >
+    android:padding="50dp"
+    tools:context=".Vibrator" >
 
     <ImageView
         android:id="@+id/imageView1"
@@ -25,9 +27,9 @@
             android:id="@+id/bEnterCam"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/mybutton"
+            android:background="@drawable/testbutton"
             android:text="Camera Application"
-            android:textSize="22dp"
+            android:textSize="24dp"
             android:layout_gravity="left"
             android:layout_weight="0.2"
             android:layout_marginRight="30dp"
@@ -38,9 +40,9 @@
             android:id="@+id/bUserGuide"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/mybutton"
+            android:background="@drawable/testbutton"
             android:text="User Guide"
-            android:textSize="22dp"
+            android:textSize="24dp"
             android:layout_gravity="right" 
             android:layout_weight="0.2"
             android:layout_marginRight="40dp"

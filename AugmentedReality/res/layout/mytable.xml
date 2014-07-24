@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7E6E6"
+    android:id="@+id/tableLayout"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >"
+
+    <TableRow
+        android:id="@+id/tableRowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >"
+        <TextView
+            android:id="@+id/tvParameters"
+            android:text="Parameter"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:padding="2dip" />
+        
+        <TextView
+            android:id="@+id/tvValues"
+            android:text="Value"
+            android:textSize="16dip"
+            android:textStyle="bold"
+           android:gravity="center"
+            android:padding="2dip" />
+        
+        <TextView
+            android:id="@+id/tvMax"
+            android:text="Max"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="2dip" />
+        
+        <TextView
+            android:id="@+id/tvMin"
+            android:text="Min"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="2dip" />
+        
+        <TextView 
+            android:id="@+id/tvSeverity"
+            android:text="Severity"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:padding="2dip"
+            android:gravity="center" />"
+        
+    </TableRow>
+
+   
+    
+    <View
+        android:layout_height="8dip"
+        android:background="#FF909090" />
+
+    
+    <TableRow 
+        android:id="@+id/tableRowTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+       	 	android:id="@+id/tvTemperature"
+        	android:text="Temperature [\u00B0C]"
+        	android:textSize="16dip"
+            android:padding="3dip"
+            android:gravity="left" />
+        
+        <TextView
+            android:id="@+id/tvTemperatureValue"
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+        
+         <TextView
+            android:id="@+id/tvTemperatureMAX"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+         
+          <TextView
+            android:id="@+id/tvTemperatureMIN"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+          
+           <ImageView
+            android:id="@+id/ivTemperatureSeverity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+        
+        
+    </TableRow>
+    
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    
+    
+      <TableRow 
+        android:id="@+id/tableRowPressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+       	 	android:id="@+id/tvPressure"
+        	android:text="Pressure [bar]"
+        	android:textSize="16dip"
+            android:padding="3dip"
+            android:gravity="left" />
+        
+        <TextView
+            android:id="@+id/tvPressureValue"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+        
+         <TextView
+            android:id="@+id/tvPressureMAX"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+         
+          <TextView
+            android:id="@+id/tvPressureMIN"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+          
+           <ImageView
+            android:id="@+id/ivPressureSeverity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </TableRow>
+
+      
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    
+    
+      <TableRow 
+        android:id="@+id/tableRowOmega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+       	 	android:id="@+id/tvOmega"
+        	android:text="\u03C9  [rad/s]"
+        	android:textSize="16dip"
+            android:padding="3dip"
+            android:gravity="left" />
+        
+        <TextView
+            android:id="@+id/tvOmegaValue"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+        
+         <TextView
+            android:id="@+id/tvOmegaMAX"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+         
+          <TextView
+            android:id="@+id/tvOmegaMIN"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+          
+           <ImageView
+            android:id="@+id/ivOmegaSeverity"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </TableRow>
+    
+    
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    
+    
+    <TableRow 
+        android:id="@+id/tableRowTorque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+       	 	android:id="@+id/tvTorque"
+        	android:text="Torque \u03C4 [Nm]"
+        	android:textSize="16dip"
+            android:padding="3dip"
+            android:gravity="left" />
+        
+        <TextView
+            android:id="@+id/tvTorqueValue"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+        
+         <TextView
+            android:id="@+id/tvTorqueMAX"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+         
+          <TextView
+            android:id="@+id/tvTorqueMIN"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+          
+           <ImageView
+            android:id="@+id/ivTorqueSeverity"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </TableRow> 
+    
+     <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    
+    
+    <TableRow 
+        android:id="@+id/tableRowOilLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+       	 	android:id="@+id/tvOilLevel"
+        	android:text="Oil Level [%]"
+        	android:textSize="16dip"
+            android:padding="3dip"
+            android:gravity="left" />
+        
+        <TextView
+            android:id="@+id/tvOilLevelValue"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+        
+         <TextView
+            android:id="@+id/tvOilLevelMAX"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+         
+          <TextView
+            android:id="@+id/tvOilLevelMIN"
+            android:text=""
+            android:textSize="14dip"
+            android:padding="3dip"
+            android:gravity="center_horizontal" />
+          
+           <ImageView
+            android:id="@+id/ivOilLevelSeverity"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        
+    </TableRow> 
+    
+      <View
+        android:layout_height="8dip"
+        android:background="#FF909090" />
+      
+    
+</TableLayout>
